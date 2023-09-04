@@ -1,0 +1,1 @@
+# xiaomi-mi-body-composition-scale-2
