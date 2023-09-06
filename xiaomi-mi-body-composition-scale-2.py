@@ -1,60 +1,7 @@
-# xiaomi-mi-body-composition-scale-2
+# pip3 install requests
+# pip3 install bleak
+# pip3 install asyncio
 
-![Image](https://www.onlyme.dev/github/xiaomi-mi-body-composition-scale-2/1.png)
-
-### 1. Discover
-
-```
-# nano discover.py
-```
-
-```python
-import sys
-import asyncio
-import time
-
-from bleak import BleakScanner
-
-async def findBluetoothDevice():
-    devices = await BleakScanner.discover()
-
-    print("** Date Time: ", time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), "**\n")
-
-    for device in devices:
-        print(device)
-
-    print("--------------------------------------------------\n")
-
-print("If you want to exit, you can press Ctrl + C.\n")
-
-while True:
-    try:
-        loop = asyncio.get_event_loop()
-        loop.run_until_complete(findBluetoothDevice())
-    except KeyboardInterrupt:
-        print("\nExit\n")
-        sys.exit(0)
-    except Exception as e:
-        print("Exception Message:", str(e))
-        time.sleep(1)
-```
-
-### 2. Find device address
-
-```
-# python3 discover.py
-```
-
-![Image](https://www.onlyme.dev/github/xiaomi-mi-body-composition-scale-2/2.png)
-
-
-### 3. Get data from device
-
-```
-# nano xiaomi-mi-body-composition-scale-2.py
-```
-
-```python
 import sys
 import asyncio
 import struct
@@ -129,48 +76,3 @@ while True:
     except Exception as e:
         print("Exception Message:", str(e))
         time.sleep(1)
-```
-
-### 4. Run
-
-```
-# python3 xiaomi-mi-body-composition-scale-2.py
-```
-
-![Image](https://www.onlyme.dev/github/xiaomi-mi-body-composition-scale-2/3.png)
-
-
-## About Us
-Name : Khwanchai Kaewyos (LookHin)
-
-Email : khwanchai@gmail.com
-
-## Website
-[https://www.onlyme.dev](https://www.onlyme.dev)
-
-[https://www.facebook.com/LookHin](https://www.facebook.com/LookHin)
-
-
-## License
-
-MIT License
-
-Copyright (c) 2023 Khwanchai Kaewyos
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
