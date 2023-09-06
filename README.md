@@ -1,6 +1,6 @@
 # xiaomi-mi-body-composition-scale-2
 
-![Image](https://www.onlyme.dev/github/xiaomi-mi-body-composition-scale-2/1.png)
+![Image](https://www.onlyme.dev/github/xiaomi-mi-body-composition-scale-2/1.png?v=2)
 
 ### 1. Discover
 
