@@ -5,6 +5,9 @@
 ### 0. Install library
 
 ```
+# apt-get update
+# apt-get install -y bluez* libbluetooth-dev pkg-config libboost-python-dev libboost-thread-dev libglib2.0-dev python3-capstone
+
 # pip3 install requests
 # pip3 install bleak
 # pip3 install asyncio
