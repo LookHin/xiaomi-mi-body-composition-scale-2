@@ -2,6 +2,14 @@
 
 ![Image](https://www.onlyme.dev/github/xiaomi-mi-body-composition-scale-2/1.png?v=3)
 
+### 0. Install library
+
+```
+# pip3 install requests
+# pip3 install bleak
+# pip3 install asyncio
+```
+
 ### 1. discover.py
 
 ```
