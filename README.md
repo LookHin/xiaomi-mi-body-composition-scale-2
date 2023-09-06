@@ -6,7 +6,8 @@
 
 ```
 # apt-get update
-# apt-get install -y bluez* libbluetooth-dev pkg-config libboost-python-dev libboost-thread-dev libglib2.0-dev python3-capstone
+# apt-get install -y bluez* pkg-config libbluetooth-dev libglib2.0-dev
+# apt-get install -y libboost-thread-dev libboost-python-dev python3-capstone
 
 # pip3 install requests
 # pip3 install bleak
