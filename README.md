@@ -2,7 +2,7 @@
 
 ![Image](https://www.onlyme.dev/github/xiaomi-mi-body-composition-scale-2/1.png?v=3)
 
-### 1. Discover
+### 1. discover.py
 
 ```
 # nano discover.py
@@ -48,7 +48,7 @@ while True:
 ![Image](https://www.onlyme.dev/github/xiaomi-mi-body-composition-scale-2/2.png)
 
 
-### 3. Get data from device
+### 3. xiaomi-mi-body-composition-scale-2.py
 
 ```
 # nano xiaomi-mi-body-composition-scale-2.py
