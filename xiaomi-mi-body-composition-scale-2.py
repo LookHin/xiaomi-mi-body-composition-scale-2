@@ -41,7 +41,7 @@ def getValueFromServiceData(unpackData):
         print("Date Time: "+str(currentDateTime.strftime("%Y-%m-%d %H:%M:%S"))+"\t\tWeight : "+str(weight))
 
 async def findBluetoothDevice():
-    devices = await BleakScanner.discover()
+    devices = await BleakScanner.discover(timeout=1)
 
     for device in devices:
         if device.address == XIAOMI_SCALE_ADDRESS:
