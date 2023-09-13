@@ -9,6 +9,7 @@ import requests
 import time
 import platform
 
+from typing import Sequence
 from bleak import BleakScanner
 from datetime import datetime
 
@@ -41,7 +42,7 @@ def getValueFromServiceData(unpackData):
         print("Date Time: "+str(currentDateTime.strftime("%Y-%m-%d %H:%M:%S"))+"\t\tWeight : "+str(weight))
 
 async def findBluetoothDevice():
-    devices = await BleakScanner.discover(timeout=1)
+    devices: Sequence[BLEDevice] = await BleakScanner.discover(timeout=1)
 
     for device in devices:
         if device.address == XIAOMI_SCALE_ADDRESS:
