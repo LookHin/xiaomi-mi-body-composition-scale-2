@@ -11,6 +11,7 @@ import platform
 
 from typing import Sequence
 from bleak import BleakScanner
+from bleak.backends.device import BLEDevice
 from datetime import datetime
 
 CURRENT_SYSTEM: str = platform.system()
